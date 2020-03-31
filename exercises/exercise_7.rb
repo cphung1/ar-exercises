@@ -10,3 +10,12 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+puts "Please enter a store name"
+print "> "
+new_store = gets.chomp
+
+@store3 = Store.create(name: new_store)
+puts @store3.errors.full_messages
+
+
+# https://apidock.com/rails/ActiveModel/Errors/full_messages
